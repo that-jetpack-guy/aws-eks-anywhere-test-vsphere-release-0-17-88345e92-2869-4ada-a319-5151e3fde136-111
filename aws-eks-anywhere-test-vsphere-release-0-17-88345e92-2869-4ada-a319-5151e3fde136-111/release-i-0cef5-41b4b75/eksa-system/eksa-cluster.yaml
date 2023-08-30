@@ -24,7 +24,7 @@ spec:
   datacenterRef:
     kind: VSphereDatacenterConfig
     name: release-i-0cef5-41b4b75
-  eksaVersion: v0.0.0-dev-release-0.17+build.202
+  eksaVersion: v0.0.0-dev-release-0.17+build.203
   externalEtcdConfiguration:
     count: 1
     machineGroupRef:
@@ -33,7 +33,7 @@ spec:
   gitOpsRef:
     kind: FluxConfig
     name: eksa-test
-  kubernetesVersion: "1.26"
+  kubernetesVersion: "1.27"
   machineHealthCheck:
     nodeStartupTimeout: 10m0s
     unhealthyMachineTimeout: 5m0s
@@ -76,7 +76,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-26-eks-16-ubuntu
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-27-eks-10-ubuntu
   users:
   - name: ec2-user
     sshAuthorizedKeys:
@@ -98,7 +98,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-26-eks-16-ubuntu
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-27-eks-10-ubuntu
   users:
   - name: ec2-user
     sshAuthorizedKeys:
@@ -122,7 +122,7 @@ spec:
   numCPUs: 2
   osFamily: ubuntu
   resourcePool: /SDDC-Datacenter/host/Cluster-1/Resources/Compute-ResourcePool
-  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-26-eks-16-ubuntu
+  template: /SDDC-Datacenter/vm/Templates/kubernetes-1-27-eks-10-ubuntu
   users:
   - name: ec2-user
     sshAuthorizedKeys:
